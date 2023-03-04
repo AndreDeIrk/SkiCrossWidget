@@ -133,7 +133,7 @@ def main():
                 # if count % 30 == 0:
                 #     telemetry["Data"] += "0"*(2**16)
                 telemetry["Length"] = len(json.dumps(telemetry))
-                video_frame.metadata = f'<json>{json.dumps(telemetry)}</json>'#json.dumps(telemetry[count])
+                video_frame.metadata = f'<json>{"1;2;3;4;5;6;7;8;9;0;1;2;3;4;5;6;7;8;9;0;4;5;6;7;8"}</json>'#json.dumps(telemetry[count])
 
                 ndi.send_send_video_v2(ndi_send, video_frame)
 
